@@ -1,0 +1,10 @@
+  on:
+    pull_request:
+      branches: ['main']
+  jobs:
+    build:
+      name: Build
+      runs-on: windows
+      steps:
+        - name: print
+          uses: echo hello world
